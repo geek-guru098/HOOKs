@@ -7,7 +7,7 @@ function Useefct() {
     setTimeout(() => {
       setcount((count) => count + 1);
     }, 1000); //1sec=1000  if the count goes on skipping then remove strict  mode from main.jsx
-  }, [count]); // [empty_array]functional will exexute for only once
+  }, [count]); // [empty_array]functional will exexute for only once if count changes.This is array dependency with variable
   return (
     <>
       <h1 className=" text-4xl text-black font-bold mx-auto w-1/5">
@@ -18,4 +18,3 @@ function Useefct() {
 }
 
 export default Useefct;
-// useeffcet without dependencies.
